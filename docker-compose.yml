@@ -38,9 +38,9 @@ services:
       TYPE: {GAME_TYPE}
 
       # Memory server configs
-      MEMORY: {}
-      INIT_MEMORY: {}
-      MAX_MEMORY: {}
+      MEMORY: {MEMORY}
+      INIT_MEMORY: {INIT_MEMORY}
+      MAX_MEMORY: {MAX_MEMORY}
       
       # Establece la cantidad de datos del mundo que el servidor envía al cliente, medidos en fragmentos en cada dirección del jugador (radio, no diámetro). Determina la distancia de visualización del lado del servidor.
       VIEW_DISTANCE: {VIEW_DISTANCE}     
