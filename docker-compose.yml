@@ -78,4 +78,4 @@ services:
       # De forma predeterminada, el servidor comprueba la conexión de los jugadores con la base de datos de cuentas de Minecraft. Si quieres crear un servidor sin conexión o tu servidor no está conectado a Internet, puedes desactivar el servidor para intentar conectarte a minecraft.net y autenticar a los jugadores con la variable de entorno ONLINE_MODE
       ONLINE_MODE: {ONLINE_MODE} 
     volumes:
-    - {PATH_DATA}:/data
+    - "{PATH_DATA}:/data"
