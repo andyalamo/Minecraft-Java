@@ -36,6 +36,7 @@ services:
       STOP_SERVER_ANNOUNCE_DELAY: "${STOP_SERVER_ANNOUNCE_DELAY}"
       TZ: "${TZ}"
       TYPE: "${SERVER_TYPE}"
+      VERSION: "${VERSION}"
 
       # Memory server configs
       MEMORY: "${MEMORY}"
