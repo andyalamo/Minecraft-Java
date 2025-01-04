@@ -5,31 +5,43 @@ services:
       - {Server_Port}:25565
       - {RCON_Port}:28016
     environment:
-    
-      # MOTD - Descripcion servidor| ICON - Icono en server
-      MOTD: |
-        {MOTD}
-      ICON: {ICON}
-      OVERRIDE_ICON: TRUE
-      SERVER_NAME: {SERVER_NAME}
-
+      # Variables documentation: https://docker-minecraft-server.readthedocs.io/en/latest/variables/
+      
       # Consola remota
       ENABLE_RCON: "true"
       RCON_PASSWORD: ${RCON_PASSWORD}
       RCON_PORT: 28016
       
-      # Terminos y conficiones
-      EULA: TRUE
-      
       # Admins
       OPS: |
         {OPS}
 
-      # Common configs
-      MAX_PLAYERS: 3
-      DIFFICULTY: normal
-      PVP: true
+      # User whitelist (A list of usernames and/or UUIDs separated by comma)
+      ENABLE_WHITELIST: {ENABLE_WHITELIST}
+      WHITELIST: {WHITELIST}
+      OVERRIDE_WHITELIST: TRUE
 
+      # Common configs
+      EULA: TRUE
+      MAX_PLAYERS: {MAX_PLAYERS}
+      DIFFICULTY: {DIFFICULTY}
+      PVP: {PVP}
+
+      # Server conmfigs
+      MOTD: |
+        {MOTD}
+      ICON: {ICON}
+      OVERRIDE_ICON: TRUE
+      SERVER_NAME: {SERVER_NAME}
+      STOP_SERVER_ANNOUNCE_DELAY: {STOP_SERVER_ANNOUNCE_DELAY}
+      TZ: America/Montevideo
+      TYPE: 
+
+      # Memory server configs
+      MEMORY: {}
+      INIT_MEMORY: {}
+      MAX_MEMORY: {}
+      
       # Establece la cantidad de datos del mundo que el servidor envía al cliente, medidos en fragmentos en cada dirección del jugador (radio, no diámetro). Determina la distancia de visualización del lado del servidor.
       VIEW_DISTANCE: {VIEW_DISTANCE}     
       # Permite a los jugadores viajar al Nether.
