@@ -15,67 +15,67 @@ services:
       
       # Admins
       OPS: |
-        "{OPS}"
+        "${OPS}"
 
       # User whitelist (A list of usernames and/or UUIDs separated by comma)
-      ENABLE_WHITELIST: "{ENABLE_WHITELIST}"
-      WHITELIST: "{WHITELIST}"
+      ENABLE_WHITELIST: "${ENABLE_WHITELIST}"
+      WHITELIST: "${WHITELIST}"
       OVERRIDE_WHITELIST: TRUE
 
       # Common configs
       EULA: TRUE
-      MAX_PLAYERS: "{MAX_PLAYERS}"
-      DIFFICULTY: "{DIFFICULTY}"
-      PVP: "{PVP}"
+      MAX_PLAYERS: "${MAX_PLAYERS}"
+      DIFFICULTY: "${DIFFICULTY}"
+      PVP: "${PVP}"
 
       # Server conmfigs
       MOTD: |
-        "{MOTD}"
-      ICON: "{ICON}"
+        "${MOTD}"
+      ICON: "${ICON}"
       OVERRIDE_ICON: TRUE
-      SERVER_NAME: "{SERVER_NAME}"
-      STOP_SERVER_ANNOUNCE_DELAY: "{STOP_SERVER_ANNOUNCE_DELAY}"
-      TZ: "{TZ}"
-      TYPE: "{SERVER_TYPE}"
+      SERVER_NAME: "${SERVER_NAME}"
+      STOP_SERVER_ANNOUNCE_DELAY: "${STOP_SERVER_ANNOUNCE_DELAY}"
+      TZ: "${TZ}"
+      TYPE: "${SERVER_TYPE}"
 
       # Memory server configs
-      MEMORY: "{MEMORY}"
-      INIT_MEMORY: "{INIT_MEMORY}"
-      MAX_MEMORY: "{MAX_MEMORY}"
+      MEMORY: "${MEMORY}"
+      INIT_MEMORY: "${INIT_MEMORY}"
+      MAX_MEMORY: "${MAX_MEMORY}"
       
       # Establece la cantidad de datos del mundo que el servidor envía al cliente, medidos en fragmentos en cada dirección del jugador (radio, no diámetro). Determina la distancia de visualización del lado del servidor.
-      VIEW_DISTANCE: "{VIEW_DISTANCE}"    
+      VIEW_DISTANCE: "${VIEW_DISTANCE}"    
       # Permite a los jugadores viajar al Nether.
-      ALLOW_NETHER: "{ALLOW_NETHER}"
+      ALLOW_NETHER: "${ALLOW_NETHER}"
       # Permite que el servidor anuncie cuando un jugador obtiene un logro.
-      ANNOUNCE_PLAYER_ACHIEVEMENTS: "{ANNOUNCE_PLAYER_ACHIEVEMENTS}"
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "${ANNOUNCE_PLAYER_ACHIEVEMENTS}"
       # Define si se generarán estructuras (como aldeas).
-      GENERATE_STRUCTURES: "{GENERATE_STRUCTURES}"
+      GENERATE_STRUCTURES: "${GENERATE_STRUCTURES}"
       # Habilita bloques de comandos
-      ENABLE_COMMAND_BLOCK: "{ENABLE_COMMAND_BLOCK}"
+      ENABLE_COMMAND_BLOCK: "${ENABLE_COMMAND_BLOCK}"
       # Si se establece como verdadero, los jugadores pasarán al modo espectador si mueren.
-      HARDCORE: "{HARDCORE}"
+      HARDCORE: "${HARDCORE}"
       # Obliga a los jugadores a unirse al modo de juego predeterminado.
-      FORCE_GAMEMODE: "{FORCE_GAMEMODE}"
+      FORCE_GAMEMODE: "${FORCE_GAMEMODE}"
       # Si se establece como falso, el servidor no enviará datos al servidor snoop.minecraft.net.
-      SNOOPER_ENABLED: "{SNOOPER_ENABLED}"
+      SNOOPER_ENABLED: "${SNOOPER_ENABLED}"
       # La altura máxima en la que se permite construir. El terreno aún puede generarse naturalmente por encima de un límite de altura bajo.
-      MAX_BUILD_HEIGHT: "{MAX_BUILD_HEIGHT}"
+      MAX_BUILD_HEIGHT: "${MAX_BUILD_HEIGHT}"
       # Tamaño máximo del mundo
-      MAX_WORLD_SIZE: "{MAX_WORLD_SIZE}"
+      MAX_WORLD_SIZE: "${MAX_WORLD_SIZE}"
       # La cantidad máxima de milisegundos que puede tardar un solo tic antes de que el perro guardián del servidor detenga el servidor con el mensaje. Un solo tic del servidor tardó 60,00 segundos (debería ser un máximo de 0,05). Si se considera que está bloqueado, el servidor se apagará a la fuerza. Una vez que se cumple este criterio, llama a System.exit(1). Si se establece en -1, se deshabilitará por completo el perro guardián.
-      MAX_TICK_TIME: "{MAX_TICK_TIME}"
+      MAX_TICK_TIME: "${MAX_TICK_TIME}"
       # De forma predeterminada, los servidores de Minecraft están configurados para funcionar en modo Supervivencia. Puedes cambiar el modo mediante MODEdonde puedes proporcionar los valores numéricos estándar o los valores de acceso directo: creative | survival | adventure | spectator (only for Minecraft 1.8 or later)
-      MODE: "{MODE}"
+      MODE: "${MODE}"
       
       # Permite spawns
-      SPAWN_ANIMALS: "{SPAWN_ANIMALS}"
-      SPAWN_MONSTERS: "{SPAWN_MONSTERS}"
-      SPAWN_NPCS: "{SPAWN_NPCS}"
+      SPAWN_ANIMALS: "${SPAWN_ANIMALS}"
+      SPAWN_MONSTERS: "${SPAWN_MONSTERS}"
+      SPAWN_NPCS: "${SPAWN_NPCS}"
       
       # Establece el área que los no operadores no pueden editar (0 para deshabilitar)
-      SPAWN_PROTECTION: "{SPAWN_PROTECTION}"
+      SPAWN_PROTECTION: "${SPAWN_PROTECTION}"
       # De forma predeterminada, el servidor comprueba la conexión de los jugadores con la base de datos de cuentas de Minecraft. Si quieres crear un servidor sin conexión o tu servidor no está conectado a Internet, puedes desactivar el servidor para intentar conectarte a minecraft.net y autenticar a los jugadores con la variable de entorno ONLINE_MODE
-      ONLINE_MODE: "{ONLINE_MODE}"
+      ONLINE_MODE: "${ONLINE_MODE}"
     volumes:
-    - "{PATH_DATA}:/data"
+    - "${PATH_DATA}:/data"
