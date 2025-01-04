@@ -4,6 +4,7 @@ services:
     ports:
       - "{Server_Port}:25565"
       - "{RCON_Port}:28016"
+    restart: always
     environment:
       # Variables documentation: https://docker-minecraft-server.readthedocs.io/en/latest/variables/
       
@@ -76,7 +77,5 @@ services:
       SPAWN_PROTECTION: {SPAWN_PROTECTION} 
       # De forma predeterminada, el servidor comprueba la conexión de los jugadores con la base de datos de cuentas de Minecraft. Si quieres crear un servidor sin conexión o tu servidor no está conectado a Internet, puedes desactivar el servidor para intentar conectarte a minecraft.net y autenticar a los jugadores con la variable de entorno ONLINE_MODE
       ONLINE_MODE: {ONLINE_MODE} 
-
-      restart: always
     volumes:
     - {PATH_DATA}:/data
