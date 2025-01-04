@@ -34,8 +34,8 @@ services:
       OVERRIDE_ICON: TRUE
       SERVER_NAME: {SERVER_NAME}
       STOP_SERVER_ANNOUNCE_DELAY: {STOP_SERVER_ANNOUNCE_DELAY}
-      TZ: America/Montevideo
-      TYPE: 
+      TZ: {TZ}
+      TYPE: {GAME_TYPE}
 
       # Memory server configs
       MEMORY: {}
