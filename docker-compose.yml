@@ -35,7 +35,7 @@ services:
       SERVER_NAME: {SERVER_NAME}
       STOP_SERVER_ANNOUNCE_DELAY: {STOP_SERVER_ANNOUNCE_DELAY}
       TZ: {TZ}
-      TYPE: {GAME_TYPE}
+      TYPE: {SERVER_TYPE}
 
       # Memory server configs
       MEMORY: {MEMORY}
