@@ -2,8 +2,8 @@ services:
   minecraft:
     image: itzg/minecraft-server
     ports:
-      -{Server_Port}:25565
-      -{RCON_Port}:28016
+      - "{Server_Port}:25565"
+      - "{RCON_Port}:28016"
     environment:
       # Variables documentation: https://docker-minecraft-server.readthedocs.io/en/latest/variables/
       
