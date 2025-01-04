@@ -14,8 +14,7 @@ services:
       RCON_PORT: 28016
       
       # Admins
-      OPS: |
-        "${OPS}"
+      OPS: "${OPS}"
 
       # User whitelist (A list of usernames and/or UUIDs separated by comma)
       ENABLE_WHITELIST: "${ENABLE_WHITELIST}"
