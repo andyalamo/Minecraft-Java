@@ -79,4 +79,4 @@ services:
 
       restart: always
     volumes:
-    - {path_data}:/data
+    - {PATH_DATA}:/data
